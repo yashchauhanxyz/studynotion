@@ -24,7 +24,7 @@ app.use(express.urlencoded({extended: true}))//for using postman
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:'*',
+		origin:"https://studynotion-6j7uaclcl-yash-chauhans-projects-1816ec77.vercel.app",
 		credentials:false,
 	})
 )
