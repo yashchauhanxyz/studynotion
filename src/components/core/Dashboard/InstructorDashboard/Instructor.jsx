@@ -48,7 +48,7 @@ export default function Instructor() {
         </div>
         {loading ? (
           <div className="spinner"></div>
-        ) : courses.length > 0 ? (
+        ) :courses.length > 0 ? (
           <div>
             <div className="my-4 flex h-[450px] space-x-4">
               {/* Render chart / graph */}
@@ -109,7 +109,7 @@ export default function Instructor() {
                       </p>
                       <div className="mt-1 flex items-center space-x-2">
                         <p className="text-xs font-medium text-richblack-300">
-                          {course.studentsEnroled.length} students
+                          {course.studentsEnroled && course.studentsEnroled.length} students
                         </p>
                         <p className="text-xs font-medium text-richblack-300">
                           |

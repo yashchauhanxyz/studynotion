@@ -28,6 +28,7 @@ function Navbar() {
       try {
         const res = await apiConnector("GET", categories.CATEGORIES_API);
         setSubLinks(res.data.data);
+        console.log(res);
       } catch (error) {
         console.log("Could not fetch Categories.", error);
       }
@@ -94,7 +95,7 @@ function Navbar() {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   className="mb-2 md:mb-0 transition duration-300 ease-in-out transform hover:text-yellow-25 hover:scale-105
-                relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-yellow-50 after:bottom-0 after:left-0 after:transition-all after:duration-700 after:ease-in-out hover:after:w-full " 
+                relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-yellow-50 after:bottom-0 after:left-0 after:transition-all after:duration-700 after:ease-in-out hover:after:w-full " >
                   {title === "Catalog" ? (
                     <div
                       className={`group relative flex cursor-pointer items-center gap-1 ${
