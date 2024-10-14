@@ -25,7 +25,8 @@ app.use(cookieParser());
 app.use(
 	cors({
 		origin:"https://studynotion-6j7uaclcl-yash-chauhans-projects-1816ec77.vercel.app",
-		credentials:false,
+		methods: ['GET', 'POST', 'PUT', 'DELETE'],
+		credentials:true,
 	})
 )
 
